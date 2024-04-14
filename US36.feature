@@ -28,3 +28,4 @@ Feature: informative content
     Then I dont understand the goal of the application
 
       Examples:
+      .
