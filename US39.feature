@@ -11,7 +11,7 @@ Feature: multimedia content
 
     As a user
     I want to find multimedia content such as images, videos, that represent the benefits and characteristics of the application in a visually appealing way
-    So that I can make myself a good understanding of the porpouse of the application
+    So that I can make myself a good understanding of the purpose of the application
 
   Scenario: Invalid information
     Given I am on the landing page

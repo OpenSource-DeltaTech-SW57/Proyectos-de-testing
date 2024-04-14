@@ -4,7 +4,7 @@
 #
 #   Como usuario que accede desde dispositivos móviles,
 #   quiero que la landing page esté optimizada para dispositivos móviles
-#   para garantizar una experiencia de navegación fluida y accesible.
+#   para garantizar una experiencia de navegación fluida y accessible.
 #
 #---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -12,7 +12,7 @@ Feature: mobile compatibility
 
     As a user
     I want the landing page to be available through mobile devices
-    So that I can have an accesible and easy going experience
+    So that I can have an accessible and easy going experience
 
   Scenario: working comptibility
     Given I am on my mobile device

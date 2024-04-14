@@ -11,9 +11,9 @@
 Feature: contact form
 
     As a user
-    I want the landing page to be available through mobile devices
-    So that I can have an accesible and easy going experience
-
+    I want to find a contact form in the landing page
+    So that I can contact with the page team and ask questions in an easy way
+    
   Scenario: working contact form
     Given I am on the landing page contact form section
     When I enter the form answers
