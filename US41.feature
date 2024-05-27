@@ -1,38 +1,33 @@
 #---------------------------------------------------------------------------------------------------------------------------------------
 #---------------------------------------------------------------------------------------------------------------------------------------
-#   US41:  Menú superior funcional
 #
-#   Como visitante de la landing page,
-#   quisiera que el menú superior funcione correctamente
-#   para desplazarme rápidamente a través de la landing page.
+#   US41: Explorar information items
 #
 #---------------------------------------------------------------------------------------------------------------------------------------
-Feature: working upper menu 
+Feature: Explore information items
 
     As a user
-    I want upper menu to work properly
-    So that I can quickly navigate through the landing page
+    I want to visualize the information items
+    So that I can access to the information inside
 
-  Scenario: working upper menu
-    Given I am on the landing page
-    When I go to the upper menu
-    And I select any of the options there
-    Then I should be redirected to the corresponding section of the landing page
-
-      Examples:
-
-  Scenario: malfunctioning upper menu
-    Given I am on the landing page
-    When I go to the upper menu
-    And I select any of the options there
-    Then I am redirected to the wrong section of the landing page
+  Scenario: visualize information items
+    Given the user access a project
+    When the user tries to visualize the project information items
+    Then they appear and are able to select
 
       Examples:
 
-  Scenario: not working upper menu
-    Given I am on the landing page
-    When I go to the upper menu
-    And I select any of the options there
-    Then nothing happens
+  Scenario: Error loading iformation items
+    Given the user access a project
+    When the user tries to visualize the project information items
+    Then an error happens and the information items fail to load
 
       Examples:
+
+  Scenario: Empty project
+    Given the user access a project
+    When the user tries to visualize the project information items
+    Then no information item appear as the project is empty
+
+      Examples:
+      

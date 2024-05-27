@@ -1,30 +1,27 @@
 #---------------------------------------------------------------------------------------------------------------------------------------
 #---------------------------------------------------------------------------------------------------------------------------------------
-#   US40: Call-to-action claro
 #
-#   Como usuario potencial,
-#   quiero encontrar llamadas claras a la acción en la landing page, como botones de registro o descarga
-#   para que me guíen hacia el siguiente paso en mi interacción con la aplicación.
+#   US40: Ingresar proyecto
 #
 #---------------------------------------------------------------------------------------------------------------------------------------
-Feature: clear Call-to-action 
+Feature: Access to project
 
     As a user
-    I want to find clear call-to-action buttons such as sign-in or download buttons in the landing page
-    So that they gide me in the next step in order to get the application.
+    I want to access the projects
+    So that I can work with the information inside
 
-  Scenario: easy to see call-to-action
-    Given I am on the landing page
-    When I scroll through the page
-    And I easily see the call-to-action
-    Then I should be able to get to the next step in order to get the application
-
-      Examples:
-
-  Scenario: unclear call-to-action
-    Given I am on the landing page
-    When I scroll through the page
-    And I dont see any call-to-action
-    Then I still dont know how to get the application
+  Scenario: Access to project
+    Given the user select an existent project
+    When the user tries to enter the content
+    Then I acces the project
 
       Examples:
+
+  Scenario: Error accessing to projects
+    Given the user select an existent project
+    When I scroll through the page
+    And he user tries to enter the content
+    Then an error deny the access
+
+      Examples:
+      
